@@ -1,15 +1,14 @@
 queue:
-  name: Chost
-  demands:
+  name: Ghost
+  demands: 
     - DotNetFramework
     - msbuild
     - visualstudio
     - vstest
-    
-    
+
+
 steps:
 - task: PowerShell@1
-inputs:
-  scriptType: "inlineScript"
-  inlineScript: "get-children -path env:* "
-  
+  inputs:
+    scriptType: "inlineScript"
+    inlineScript: "get-childitem -path env:* "
