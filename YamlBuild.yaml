@@ -10,5 +10,5 @@ queue:
 steps:
 - task: PowerShell@1
   inputs:
-    scriptType: "inlineScript"
-    inlineScript: "get-childitem -path env:* "
+    scriptType: 'inlineScript'
+    inlineScript: 'get-childitem -path env:*'
