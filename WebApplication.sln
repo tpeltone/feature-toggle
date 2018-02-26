@@ -10,6 +10,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		YamlBuild.yaml = YamlBuild.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Provisioning", "Provisioning", "{69FBE8A9-44E0-46BC-9EC1-3D88F224AE57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{BFF6F00D-F2A0-40C3-8A11-8BDCA10D8F4E}"
+	ProjectSection(SolutionItems) = preProject
+		Provisioning\WebApp\deploy.ps1 = Provisioning\WebApp\deploy.ps1
+		Provisioning\WebApp\parameters.json = Provisioning\WebApp\parameters.json
+		Provisioning\WebApp\SetSlotTraffic.ps1 = Provisioning\WebApp\SetSlotTraffic.ps1
+		Provisioning\WebApp\template.json = Provisioning\WebApp\template.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeploymentValidation", "Provisioning\DeploymentValidation\DeploymentValidation\DeploymentValidation.csproj", "{4522C03D-3267-4092-8FB8-612B24B2368F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +32,16 @@ Global
 		{DF34B958-1A7F-4422-8837-FC70E99E0EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF34B958-1A7F-4422-8837-FC70E99E0EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF34B958-1A7F-4422-8837-FC70E99E0EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4522C03D-3267-4092-8FB8-612B24B2368F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4522C03D-3267-4092-8FB8-612B24B2368F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4522C03D-3267-4092-8FB8-612B24B2368F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4522C03D-3267-4092-8FB8-612B24B2368F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BFF6F00D-F2A0-40C3-8A11-8BDCA10D8F4E} = {69FBE8A9-44E0-46BC-9EC1-3D88F224AE57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38B0D061-16A8-417B-9F57-CE80934A3D9E}
